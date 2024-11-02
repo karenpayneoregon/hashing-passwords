@@ -5,7 +5,7 @@ namespace EF_Core_ValueConversionsEncryptProperty;
 
 internal partial class Program
 {
-    static async Task Main(string[] args)
+    private static async Task Main(string[] args)
     {
 
         await Examples.CreateDatabase();
