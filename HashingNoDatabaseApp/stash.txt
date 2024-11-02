@@ -1,0 +1,6 @@
+https://medium.com/@nambi2210/password-hashing-in-asp-net-core-ee377c29fa24
+
+https://dev.to/cwl157/create-custom-password-hasher-for-asp-net-core-identity-13mb
+	https://github.com/cwl157/asp-net-core-auth-examples/tree/master
+
+https://andrewlock.net/exploring-the-asp-net-core-identity-passwordhasher/
