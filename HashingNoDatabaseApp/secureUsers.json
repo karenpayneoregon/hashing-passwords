@@ -1,0 +1,14 @@
+[
+  {
+    "Username": "Duke",
+    "HashedPassword": "$2a$13$PR0yj6MTCvc6ZuBHZn7uIuhpehYPCAe2yW5AU1/mvFQOzrKmsJ6Ey"
+  },
+  {
+    "Username": "John",
+    "HashedPassword": "$2a$13$5I8hdkp1alYL4o3bpRT70eo0M1wp/tzhTLz9wQnRkM9EJKx0nXFSq"
+  },
+  {
+    "Username": "Jane",
+    "HashedPassword": "$2a$13$yCrt3h.dC0Y8CQksftH5h.vyEKzvLUY1JDw7F7Y2.KY4UpCoE0exO"
+  }
+]

@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+
+    input {
+        width: 22em !important;
+    }
+</style>
+
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="row border border-dark-subtle shadow">
+        <div class="col-10">
+
+            <h1 class="fs-5 mt-2"><span class="fw-bold">Login</span> &mdash; <em>Setup to authenticate</em></h1>
+
+            <form method="post" class="mt-4">
+                <div class="form-floating mb-3">
+                    <input asp-for="CurrentUser!.Name" class="form-control" placeholder="Username"/>
+                    <label asp-for="CurrentUser!.Name">Username</label>
+                    <span asp-validation-for="CurrentUser!.Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="CurrentUser!.Password" type="password"  id="pWord"
+                           class="form-control"/>
+                    <label asp-for="CurrentUser!.Password">Password</label>
+
+                    <span asp-validation-for="CurrentUser!.Password" class="text-danger"></span>
+                </div>
+
+                <button type="submit" 
+                        class="btn btn-primary mb-3"
+                        asp-page-handler="ValidateUser">
+                    Login
+                </button>
+                
+                <div class="alert alert-light" role="alert">
+                    @Html.Raw(Model.Message)
+                </div>
+            </form>
+
+            <div class="text-danger mt-2">
+                @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                {
+                    <span>@ViewData["ErrorMessage"]</span>
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded",
+        () => {
+            document.getElementById('pWord').value = 'password';
+        });
+</script>

@@ -1,7 +1,4 @@
 ﻿using EF_Core_ValueConversionsEncryptProperty.Classes;
-using EF_Core_ValueConversionsEncryptProperty.Data;
-using EF_Core_ValueConversionsEncryptProperty.Models;
-using Serilog;
 using static EF_Core_ValueConversionsEncryptProperty.Classes.SpectreConsoleHelpers;
 
 namespace EF_Core_ValueConversionsEncryptProperty;
