@@ -28,11 +28,8 @@
 
 
                 <div class="form-floating mb-3">
-                    <input asp-for="CurrentUser.Password" type="text" id="pWord"
-                           class="form-control" />
-
+                    <input asp-for="CurrentUser.Password" type="text" id="pWord" class="form-control" />
                     <label asp-for="CurrentUser.Password">Password</label>
-
                 </div>
 
                 <button type="submit" class="btn btn-primary mb-3" asp-page-handler="ValidateUser">
@@ -42,6 +39,7 @@
                 <div class="alert alert-light ps-0" role="alert">
                     @Html.Raw(Model.Message)
                 </div>
+
             </form>
 
         </div>

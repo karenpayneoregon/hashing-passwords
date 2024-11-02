@@ -1,0 +1,76 @@
+﻿@page
+@model RazorPagesSample.Pages.Index1Model
+@{
+}
+<style>
+/*     input[type="text"],
+    input[type="password"] {
+        width: 22em !important;
+    } */
+
+
+
+</style>
+
+
+
+<div class="container">
+
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        
+
+        <form method="post" class="row border border-dark-subtle w-50 p-4 shadow">
+            <h1 class="fs-5 mt-2"><span class="fw-bold">Login</span></h1>
+            <div class="mb-3">
+                <input asp-for="CurrentUser!.Name" class="form-control" />
+                <label asp-for="CurrentUser!.Name">Username</label>
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="CurrentUser.Password" type="text" id="pWord" class="form-control"/>
+                <label asp-for="CurrentUser.Password" for="pWord">Password</label>
+            </div>
+
+            <div class="mb-3 ms-2 form-check">
+                <input type="checkbox" class="form-check-input" id="passwordToggle">
+                <label class="form-check-label" for="passwordToggle">Toggle password</label>
+            </div>
+
+            <div class="row">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary  mb-3" asp-page-handler="ValidateUser">
+                        Login
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="alert alert-light ps-0" role="alert">
+                @Html.Raw(Model.Message)
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded",
+        () => {
+            document.getElementById("pWord").type = "password";
+        });
+            function myFunction() {
+
+            }
+
+                document.getElementById("passwordToggle").addEventListener("click", function() {
+                        var x = document.getElementById("pWord");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                });
+</script>
