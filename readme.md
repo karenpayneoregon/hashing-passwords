@@ -6,6 +6,7 @@ For hashing passwords [article](https://dev.to/karenpayneoregon/storing-password
 | Project name        |   Description    
 |:------------- |:-------------|
 | AdminApplication | Used to create mocked users |  
+| DapperSample | Dapper example |
 | EF_Core_ValueConversionsEncryptProperty | Creates database |  
 | HashingNoDatabaseApp | Password hashing no database |  
 | RazorPagesSample | ASP.NET Core example |  
