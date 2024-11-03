@@ -1,6 +1,6 @@
 # About
 
-For hashing passwords article.
+For hashing passwords [article](https://dev.to/karenpayneoregon/storing-passwords-safely-c-ifh).
 
 
 | Project name        |   Description    
