@@ -8,6 +8,6 @@ internal class EntityHelpers
     public static bool DatabaseExists()
     {
         using var context = new Context();
-        return ((context.Database.GetService<IDatabaseCreator>() as RelationalDatabaseCreator)!).Exists();
+        return ((RelationalDatabaseCreator)context.Database.GetService<IDatabaseCreator>()).Exists();
     }
 }

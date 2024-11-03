@@ -9,12 +9,6 @@ namespace EF_Core_ValueConversionsEncryptProperty.Data;
 
 public class Context : DbContext
 {
-
-    /// <summary>
-    /// Configures the model that is being built for this context.
-    /// Note use of HasConversion to encrypt the password property.
-    /// </summary>
-    /// <param name="modelBuilder">The builder being used to construct the model for this context.</param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<User>().Property(e => e.Password).HasConversion(
