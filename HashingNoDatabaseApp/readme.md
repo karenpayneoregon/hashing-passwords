@@ -1,5 +1,6 @@
 ﻿# About
 
+Example of hashing passwords without a database.
 
 ## IMPORTANT
 
