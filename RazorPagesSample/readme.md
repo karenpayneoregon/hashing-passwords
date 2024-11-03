@@ -4,5 +4,7 @@ A super simple Razor Pages sample that demonstrates how to use hash passwords in
 
 :heavy_check_mark: No controllers used to keep the code simple.
 
-> **Warning**
-> Code sample which requires the database to be created using the project `EF_Core_ValueConversionsEncryptProperty`.
+
+## IMPORTANT
+
+This application needs `EF_Core_ValueConversionsEncryptProperty` project to run first to create the database and table with one entry.
