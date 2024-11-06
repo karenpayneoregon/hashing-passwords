@@ -12,6 +12,7 @@ For hashing passwords [article](https://dev.to/karenpayneoregon/storing-password
 | HashingNoDatabaseApp | Password hashing no database |  
 | RazorPagesSample | ASP.NET Core example |  
 | Other |  |  
+| GeneratePasswordApp | Example to get random/secure passwords |  
 | NetDevPackHasherArgonApp | Uses NetDevPack.Security.PasswordHasher.Argon2 NuGet package  |  
 
 ![F1](assets/F1.png)
